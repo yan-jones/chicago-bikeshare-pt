@@ -54,17 +54,16 @@ for i in range(20):
 input("Aperte Enter para continuar...")
 # TAREFA 3
 # TODO: Crie uma função para adicionar as colunas(features) de uma lista em outra lista, na mesma ordem
-
-"""
-  Função para adicionar as colunas(features) de uma lista em outra lista, na mesma ordem
-  Argumentos:
-      data: O conjunto de dados.
-      index: O índice da coluna do conjunto de dados.
-  Retorna:
-      Uma lista de valores de acordo com o índice informado.
-
-"""
 def column_to_list(data, index):
+    """
+      Função para adicionar as colunas(features) de uma lista em outra lista, na mesma ordem
+      Argumentos:
+          data: O conjunto de dados.
+          index: O índice da coluna do conjunto de dados.
+      Retorna:
+          Uma lista de valores de acordo com o índice informado.
+    
+    """
     column_list = []
     # Dica: Você pode usar um for para iterar sobre as amostras, pegar a feature pelo seu índice, e dar append para uma lista
     for genero in data:
@@ -110,15 +109,15 @@ input("Aperte Enter para continuar...")
 # TODO: Crie uma função para contar os gêneros. Retorne uma lista.
 # Isso deveria retornar uma lista com [count_male, count_female] (exemplo: [10, 15] significa 10 Masculinos, 15 Femininos)
 
-"""
-  Função para contar a quantidade de cada gênero.
-  Argumentos:
-      data_list: O conjunto de dados.
-  Retorna:
-      Uma tupla com as quantidades de ocorrẽncia dos gêneros.
-
-"""
 def count_gender(data_list):
+    """
+      Função para contar a quantidade de cada gênero.
+      Argumentos:
+          data_list: O conjunto de dados.
+      Retorna:
+          Uma tupla com as quantidades de ocorrẽncia dos gêneros.
+    
+    """
     male = 0
     female = 0
     for genero in data_list:
@@ -145,15 +144,15 @@ input("Aperte Enter para continuar...")
 # TODO: Crie uma função que pegue o gênero mais popular, e retorne este gênero como uma string.
 # Esperamos ver "Male", "Female", ou "Equal" como resposta.
 
-"""
-  Função para ver o gênero mais popular.
-  Argumentos:
-      data_list: O conjunto de dados.
-  Retorna:
-      Uma string com o gênero mais popular.
-
-"""
 def most_popular_gender(data_list):
+    """
+      Função para ver o gênero mais popular.
+      Argumentos:
+          data_list: O conjunto de dados.
+      Retorna:
+          Uma string com o gênero mais popular.
+    
+    """
     answer = ""
     generos = count_gender(data_list)
     if(generos[0] > generos[1]):
@@ -188,15 +187,15 @@ input("Aperte Enter para continuar...")
 # TODO: Crie um gráfico similar para user_types. Tenha certeza que a legenda está correta.
 print("\nTAREFA 7: Verifique o gráfico!")
 
-"""
-  Função para contar os tipos de usuários (User Types).
-  Argumentos:
-      data_list: O conjunto de dados
-  Retorna:
-      Uma tupla com as quantidades de ocorrẽncia dos tipos de usuários (User Types).
-
-"""
 def count_user_types(data_list):
+    """
+      Função para contar os tipos de usuários (User Types).
+      Argumentos:
+          data_list: O conjunto de dados
+      Retorna:
+          Uma tupla com as quantidades de ocorrẽncia dos tipos de usuários (User Types).
+    
+    """
     customer = 0
     subscriber = 0
     for user in data_list:
@@ -299,15 +298,15 @@ input("Aperte Enter para continuar...")
 print("Você vai encarar o desafio? (yes ou no)")
 answer = "yes"
 
-"""
-  Função para contar tipos de usuários.
-  Argumentos:
-      column_list: A lista de valores de determinada coluna.
-  Retorna:
-      Retorna os tipos de categorias e a quantidade delas respectivamente.
-
-"""
 def count_items(column_list):
+    """
+      Função para contar tipos de usuários.
+      Argumentos:
+          column_list: A lista de valores de determinada coluna.
+      Retorna:
+          Retorna os tipos de categorias e a quantidade delas respectivamente.
+    
+    """
     item_types = []
     count_items = []
     
